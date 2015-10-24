@@ -1,4 +1,4 @@
-require "simple_form_recurring_select/has_recurring_select"
+require "simple_form_recurring_select/has_recurrence_rule"
 require "simple_form_recurring_select/recurring_select_input"
 require "simple_form_recurring_select/version"
 

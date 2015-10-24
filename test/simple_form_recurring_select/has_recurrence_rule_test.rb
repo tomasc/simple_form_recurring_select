@@ -1,7 +1,7 @@
 require 'test_helper'
 
 module SimpleFormRecurringSelect
-  describe HasRecurringSelect do
+  describe HasRecurrenceRule do
 
     subject { MyDocument.new }
 
