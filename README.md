@@ -1,6 +1,6 @@
 # Simple Form Recurring Select
 
-[![Build Status](https://travis-ci.org/tomasc/recurring_select.svg)](https://travis-ci.org/tomasc/recurring_select) [![Gem Version](https://badge.fury.io/rb/recurring_select.svg)](http://badge.fury.io/rb/recurring_select) [![Coverage Status](https://img.shields.io/coveralls/tomasc/recurring_select.svg)](https://coveralls.io/r/tomasc/recurring_select)
+[![Build Status](https://travis-ci.org/tomasc/simple_form_recurring_select.svg)](https://travis-ci.org/tomasc/simple_form_recurring_select) [![Gem Version](https://badge.fury.io/rb/simple_form_recurring_select.svg)](http://badge.fury.io/rb/simple_form_recurring_select) [![Coverage Status](https://img.shields.io/coveralls/tomasc/simple_form_recurring_select.svg)](https://coveralls.io/r/tomasc/recurring_select)
 
 Wrapper around the [recurring_select](https://github.com/GetJobber/recurring_select) gem for Simple Form.
 
