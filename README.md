@@ -62,6 +62,11 @@ class MyModel
 end
 ```
 
+## See also
+
+* [MongoidIceCubeExtension](https://github.com/tomasc/mongoid_ice_cube_extension) for storing `IceCube` schedule in Mongoid documents
+* [MongoidRecurring](https://github.com/tomasc/mongoid_recurring) for recurring DateTime fields for Mongoid models.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
