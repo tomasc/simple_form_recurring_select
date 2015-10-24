@@ -10,9 +10,7 @@ module SimpleFormRecurringSelect
     # =====================================================================
 
     module ClassMethods
-      def has_recurrence_rule options={}
-        accessor_name = options.fetch :accessor_name, :recurrence_rule
-
+      def has_recurrence_rule accessor_name=:recurrence_rule
         attr_reader accessor_name
 
         define_method "#{accessor_name}=" do |value|

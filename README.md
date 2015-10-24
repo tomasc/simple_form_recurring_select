@@ -53,12 +53,12 @@ In forms:
 
 ## Configuration
 
-Accessor & schedule accessor / method names can be configured as follows:
+The accessor name can be directly specified:
 
 ```ruby
 class MyModel
   include SimpleFormRecurringSelect::HasRecurringSelect
-  has_recurring_select accessor_name: :my_recurrence_rule
+  has_recurring_select :my_recurrence_rule
 end
 ```
 
