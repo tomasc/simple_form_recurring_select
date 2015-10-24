@@ -31,7 +31,7 @@ In model:
   end
 ```
 
-This will setup `#recurrence_rule` accessor (to be used in a form).
+This will setup `#recurrence_rule` accessor that converts JSON coming from a form to (IceCube::Rule)[https://github.com/seejohnrun/ice_cube].
 
 In forms:
 
