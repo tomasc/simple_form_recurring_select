@@ -43,7 +43,7 @@ In model:
   end
 ```
 
-This will setup `#recurrence_rule` accessor that converts JSON coming from a form to (IceCube::Rule)[https://github.com/seejohnrun/ice_cube]. The logic of adding the recurrence rule to a schedule is left up to you.
+This will setup `recurrence_rule` accessor that converts JSON coming from a form to (IceCube::Rule)[https://github.com/seejohnrun/ice_cube]. The logic of adding the recurrence rule to a schedule is left up to you.
 
 In forms:
 
