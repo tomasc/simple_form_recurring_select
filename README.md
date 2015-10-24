@@ -25,22 +25,22 @@ Or install it yourself as:
 In model:
 
 ```ruby
-  class MyModel
-    include SimpleFormRecurringSelect::HasRecurrenceRule
-    has_recurrence_rule
+class MyModel
+  include SimpleFormRecurringSelect::HasRecurrenceRule
+  has_recurrence_rule
 
-    def recurrence_rule
-      @recurrence_rule ||= schedule.recurrence_rules.first
-    end
+  def recurrence_rule
+    @recurrence_rule ||= schedule.recurrence_rules.first
+  end
 
-    private
+  private
 
-    def update_schedule
-      self.schedule = IceCube::Schedule.new(schedule.start_time) do |s|
-        s.add_recurrence_rule(@recurrence_rule) if @recurrence_rule.present?
-      end
+  def update_schedule
+    self.schedule = IceCube::Schedule.new(schedule.start_time) do |s|
+      s.add_recurrence_rule(@recurrence_rule) if @recurrence_rule.present?
     end
   end
+end
 ```
 
 This will setup `recurrence_rule` accessor that converts JSON coming from a form to [IceCube::Rule](https://github.com/seejohnrun/ice_cube). The logic of adding the recurrence rule to a schedule is left up to you.
@@ -48,7 +48,7 @@ This will setup `recurrence_rule` accessor that converts JSON coming from a form
 In forms:
 
 ```ruby
-  = form.input :recurrence_rule, as: :recurring_select
+= form.input :recurrence_rule, as: :recurring_select
 ```
 
 ## Configuration
@@ -56,10 +56,10 @@ In forms:
 Accessor & schedule accessor / method names can be configured as follows:
 
 ```ruby
-  class MyModel
-    include SimpleFormRecurringSelect::HasRecurringSelect
-    has_recurring_select accessor_name: :my_recurrence_rule
-  end
+class MyModel
+  include SimpleFormRecurringSelect::HasRecurringSelect
+  has_recurring_select accessor_name: :my_recurrence_rule
+end
 ```
 
 ## Development
