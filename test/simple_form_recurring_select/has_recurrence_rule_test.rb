@@ -2,7 +2,6 @@ require 'test_helper'
 
 module SimpleFormRecurringSelect
   describe HasRecurrenceRule do
-
     subject { MyDocument.new }
 
     # =====================================================================
@@ -25,12 +24,11 @@ module SimpleFormRecurringSelect
 
     describe 'setting nil' do
       it 'returns nil' do
-        [ nil, 'null' ].each do |value|
+        [nil, 'null'].each do |value|
           subject.recurrence_rule = value
           subject.recurrence_rule.must_be_nil
         end
       end
     end
-
   end
 end

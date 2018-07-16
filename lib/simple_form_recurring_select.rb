@@ -1,6 +1,6 @@
-require "simple_form_recurring_select/has_recurrence_rule"
-require "simple_form_recurring_select/recurring_select_input"
-require "simple_form_recurring_select/version"
+require 'simple_form_recurring_select/has_recurrence_rule'
+require 'simple_form_recurring_select/recurring_select_input'
+require 'simple_form_recurring_select/version'
 
 # ---------------------------------------------------------------------
 
